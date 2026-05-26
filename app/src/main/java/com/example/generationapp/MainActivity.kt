@@ -38,7 +38,10 @@ class MainActivity : AppCompatActivity() {
                 in 2013..2024 -> "Generation Alpha"
                 // Generation Beta
                 in 2025..2039 -> "Generation Beta"
+                // If the year does not match any range
+                else -> "Generation not found"
             }
+            
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
