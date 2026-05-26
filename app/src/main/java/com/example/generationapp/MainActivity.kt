@@ -41,7 +41,8 @@ class MainActivity : AppCompatActivity() {
                 // If the year does not match any range
                 else -> "Generation not found"
             }
-            
+            // Display the result on the screen
+            txtGen.text = "Your generation is: $generation"
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
