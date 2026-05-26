@@ -18,6 +18,13 @@ class MainActivity : AppCompatActivity() {
         val edtYear = findViewById<EditText>(R.id.edtYear)
         val btnSubmit = findViewById<Button>(R.id.btnSubmit)
         val txtGen = findViewById<TextView>(R.id.txtGen)
+        // Logic for the submit button
+        btnSubmit.setOnClickListener {
+             // Get the year entered by the user
+            val year = edtYear.text.toString().toInt()
+            // Determine the generation using a when statement
+            val generation = when (year) {}
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
