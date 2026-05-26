@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         val edtYear = findViewById<EditText>(R.id.edtYear)
         val btnSubmit = findViewById<Button>(R.id.btnSubmit)
         val txtGen = findViewById<TextView>(R.id.txtGen)
+        val btnReset = findViewById<Button>(R.id.btnReset)
         // Logic for the submit button
         btnSubmit.setOnClickListener {
              // Get the year entered by the user
@@ -31,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 //Generation X
                 in 1965..1980 -> "Generation X"
                 // Millennials
-                in 1981..1996 -> "Millenials"
+                in 1981..1996 -> "Millennials"
                 // Generation Z
                 in 1997..2012 -> "Generation Z"
                 // Generation Alpha
