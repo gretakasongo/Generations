@@ -23,7 +23,22 @@ class MainActivity : AppCompatActivity() {
              // Get the year entered by the user
             val year = edtYear.text.toString().toInt()
             // Determine the generation using a when statement
-            val generation = when (year) {}
+            val generation = when (year) {
+                // Silent Generation
+                in 1925..1945 -> "Silent Generation"
+                // Baby Boomers
+                in 1946..1964 -> "Baby Boomers"
+                //Generation X
+                in 1965..1980 -> "Generation X"
+                // Millennials
+                in 1981..1996 -> "Millenials"
+                // Generation Z
+                in 1997..2012 -> "Generation Z"
+                // Generation Alpha
+                in 2013..2024 -> "Generation Alpha"
+                // Generation Beta
+                in 2025..2039 -> "Generation Beta"
+            }
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
