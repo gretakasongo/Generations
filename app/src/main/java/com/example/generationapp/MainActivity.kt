@@ -45,6 +45,11 @@ class MainActivity : AppCompatActivity() {
             // Display the result on the screen
             txtGen.text = "Your generation is: $generation"
         }
+        // logic for the "Reset" button to clear fields
+        btnReset.setOnClickListener {
+            edtYear.text.clear()
+            txtGen.text = ""
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
